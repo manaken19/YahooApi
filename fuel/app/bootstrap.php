@@ -28,3 +28,7 @@ Fuel::$env = (isset($_SERVER['FUEL_ENV']) ? $_SERVER['FUEL_ENV'] : Fuel::DEVELOP
 
 // Initialize the framework with the config file.
 Fuel::init('config.php');
+
+//Read Constants Class
+require APPPATH.'/config/'. Fuel::$env . '/constants.php' ;
+require APPPATH.'/config/'. '/constants.php' ;
